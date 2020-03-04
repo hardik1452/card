@@ -74,15 +74,15 @@ export default class Login extends React.Component {
     return (
       <ImageBackground source={require('../images/bg01.jpg')} style={{ width, height }}>
         <ScrollView>
-          <View style={{ paddingTop: 50, backgroundColor: 'transparent' }}>
+          <View style={{ paddingTop: 30, backgroundColor: 'transparent' }}>
             <View style={{ alignItems:'center'}}>
               <Image  source={require('../images/logo.png')} style={{width:200, height:200}} />
             </View>
 
-            <View style={{ marginTop: 50, paddingLeft: 13,backgroundColor:'trasnparent' }} >
+            <View style={{ marginTop: 10, paddingLeft: 13,backgroundColor:'trasnparent' }} >
               <View style={{ marginRight: 20, alignItems: 'center' }}>
                 <View style={{ alignItems: 'center', flexDirection: 'row', width: width - 60 }}>
-                  <Icon name="email" color='#266cf7' />
+                  <Icon name="email" color='#029af4' />
                   <TextInput
                     style={{ width: 320, fontFamily: 'Poppins-Medium' }}
                     placeholder='EMAIL'
@@ -95,13 +95,13 @@ export default class Login extends React.Component {
               </View>
               <View style={{ marginRight: 20, marginTop: 20, alignItems: 'center' }}>
                 <View style={{ height: 70, alignItems: 'center', flexDirection: 'row', width: width - 60 }}>
-                  <Icon name='lock' color='#266cf7' />
+                  <Icon name='lock' color='#029af4' />
                   <TextInput style={{ width: 320, fontFamily: 'Poppins-Medium' }} placeholder='PASSWORD' placeholderTextColor='#c4c9cf' underlineColorAndroid='grey' secureTextEntry={true} />
                 </View>
               </View>
               <View >
                 <TouchableOpacity onPress={() => alert('The Forget Password Screen will open')}>
-                  <Text style={{ paddingTop: 10, paddingLeft: 14, color: '#266cf7', fontFamily: 'Poppins-Medium' }}>FORGET PASSWORD?</Text>
+                  <Text style={{ paddingTop: 10, paddingLeft: 14, color: '#029af4', fontFamily: 'Poppins-Medium' }}>FORGET PASSWORD?</Text>
                 </TouchableOpacity>
               </View>
               <View style={{ marginTop: 20 }}>
@@ -116,7 +116,7 @@ export default class Login extends React.Component {
                 <Button
                   upperCase={false}
                   style={{
-                    container: { marginTop: 10, width: width - 50, height: 55, backgroundColor: '#266cf7', borderRadius: 2 },
+                    container: { marginTop: 10, width: width - 50, height: 55, backgroundColor: '#029af4', borderRadius: 2 },
                     text: { color: '#ffffff', fontSize: 20, fontFamily: 'Poppins-Bold' }
                   }}
                   text={'SIGN IN'}
@@ -126,20 +126,20 @@ export default class Login extends React.Component {
               <View style={{ backgroundColor: 'transparent', marginTop: 20 }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                   <View style={{ flex: 1, backgroundColor: 'red', marginLeft: 13 }}>
-                    <Divider style={{ container: { borderWidth: 1, borderBottomColor: '#266cf7' } }} />
+                    <Divider style={{ container: { borderWidth: 1, borderBottomColor: '#029af4' } }} />
                   </View>
                   <View>
                     <Text style={{ fontFamily: 'Poppins-Medium', color: '#266cf7', paddingLeft: 5, paddingRight: 5 }}>OR SIGN UP HERE</Text>
                   </View>
                   <View style={{ flex: 1, backgroundColor: 'blue', marginRight: 14 }}>
-                    <Divider style={{ container: { borderWidth: 1, borderBottomColor: '#266cf7' } }} />
+                    <Divider style={{ container: { borderWidth: 1, borderBottomColor: '#029af4' } }} />
                   </View>
                 </View>
                 <View style={{ alignItems:'center',marginLeft: 10, marginRight: 10, marginTop: 18 }}>
                 <Button
                   upperCase={false}
                   style={{
-                    container: { marginTop: 10, width: width - 50, height: 55, backgroundColor: '#266cf7', borderRadius: 2 },
+                    container: { marginTop: 10, width: width - 50, height: 55, backgroundColor: '#029af4', borderRadius: 2 },
                     text: { color: '#ffffff', fontSize: 20, fontFamily: 'Poppins-Bold' }
                   }}
                   text={'SIGN UP'}
