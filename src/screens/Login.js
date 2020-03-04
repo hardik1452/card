@@ -74,18 +74,18 @@ export default class Login extends React.Component {
     return (
       <ImageBackground source={require('../images/bg01.jpg')} style={{ width, height }}>
         <ScrollView>
-          <View style={{ paddingTop: 30, backgroundColor: 'transparent' }}>
+          <View style={{ paddingTop: 50, backgroundColor: 'transparent' }}>
             <View style={{ alignItems:'center'}}>
               <Image  source={require('../images/logo.png')} style={{width:200, height:200}} />
             </View>
 
-            <View style={{ marginTop: 10, paddingLeft: 13,backgroundColor:'trasnparent' }} >
+            <View style={{ marginTop: 20, paddingLeft: 13,backgroundColor:'trasnparent' }} >
               <View style={{ marginRight: 20, alignItems: 'center' }}>
                 <View style={{ alignItems: 'center', flexDirection: 'row', width: width - 60 }}>
                   <Icon name="email" color='#029af4' />
                   <TextInput
                     style={{ width: 320, fontFamily: 'Poppins-Medium' }}
-                    placeholder='EMAIL'
+                    placeholder='Employee ID'
                     placeholderTextColor='#c4c9cf'
                     underlineColorAndroid='grey'
                     value={this.state.email}
@@ -96,7 +96,7 @@ export default class Login extends React.Component {
               <View style={{ marginRight: 20, marginTop: 20, alignItems: 'center' }}>
                 <View style={{ height: 70, alignItems: 'center', flexDirection: 'row', width: width - 60 }}>
                   <Icon name='lock' color='#029af4' />
-                  <TextInput style={{ width: 320, fontFamily: 'Poppins-Medium' }} placeholder='PASSWORD' placeholderTextColor='#c4c9cf' underlineColorAndroid='grey' secureTextEntry={true} />
+                  <TextInput style={{ width: 320, fontFamily: 'Poppins-Medium' }} placeholder='Password' placeholderTextColor='#c4c9cf' underlineColorAndroid='grey' secureTextEntry={true} />
                 </View>
               </View>
               <View >
@@ -123,7 +123,7 @@ export default class Login extends React.Component {
                   onPress={() => this.validateEmail()}
                 />
               </View>
-              <View style={{ backgroundColor: 'transparent', marginTop: 20 }}>
+              {/* <View style={{ backgroundColor: 'transparent', marginTop: 20 }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                   <View style={{ flex: 1, backgroundColor: 'red', marginLeft: 13 }}>
                     <Divider style={{ container: { borderWidth: 1, borderBottomColor: '#029af4' } }} />
@@ -147,7 +147,7 @@ export default class Login extends React.Component {
                   />
                   
                 </View>
-              </View>
+              </View> */}
             </View>
           </View>
         </ScrollView>
