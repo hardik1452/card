@@ -30,10 +30,10 @@ export default class Routes extends React.Component {
     return (
       <Router backAndroidHandler={() => this.onBackAndroid()}>
         <Stack key="root">
-          <Scene key="HomeScreen" component={HomeScreen} hideNavBar initial/>
+          <Scene key="HomeScreen" component={HomeScreen} hideNavBar />
           <Scene key="Login" component={Login} hideNavBar/>
           <Scene key="Register" component={Register} hideNavBar/>
-          <Scene key="HomeCopy" component={HomeCopy} hideNavBar/>
+          <Scene key="HomeCopy" component={HomeCopy} hideNavBar initial/>
           <Scene key="Loginf" component={Loginf}  hideNavBar  />
         </Stack>
       </Router>
